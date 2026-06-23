@@ -1,0 +1,150 @@
+﻿unit_index,source_name,frame_count,max_width,max_height,cell_width,cell_height,stop_offset,stop_reason,output_dir
+0,BuildMan.ch,321,43,50,58,74,0x410ec,stopped at non-frame data,000_BuildMan
+1,PowerMan.ch,150,205,154,213,162,0x3962b,stopped at non-frame data,001_PowerMan
+2,Giant.chr,234,193,204,221,212,0xa537d,stopped at non-frame data,002_Giant
+3,Soldier.chr,214,157,132,165,148,0x3f64b,stopped at non-frame data,003_Soldier
+4,Knight.chr,193,199,222,207,230,0xae9c4,stopped at non-frame data,004_Knight
+5,Revolver.ch,76,169,224,177,238,0x638a2,stopped at non-frame data,005_Revolver
+6,BowMachine,139,189,113,197,126,0x96b64,stopped at non-frame data,006_BowMachine
+7,Squadron.ch,130,72,141,80,154,0x3974e,stopped at non-frame data,007_Squadron
+8,Flattop.chr,175,182,202,190,222,0x1f69ee,stopped at non-frame data,008_Flattop
+9,Chief.chr,246,180,130,204,160,0xe9363,stopped at non-frame data,009_Chief
+10,PowerMan _S,150,205,154,213,162,0x3f577,stopped at non-frame data,010_PowerMan__S
+11,Soldier _Fi,211,157,132,165,148,0x3f06c,stopped at non-frame data,011_Soldier__Fi
+12,Soldier _Ve,214,157,132,165,148,0x4056c,stopped at non-frame data,012_Soldier__Ve
+13,Knight _Spe,193,199,222,219,230,0xb1ca0,stopped at non-frame data,013_Knight__Spe
+14,Kalma.chr,86,132,199,140,214,0x6eb08,stopped at non-frame data,014_Kalma
+15,Silvan.chr,201,128,103,140,130,0x3f355,stopped at non-frame data,015_Silvan
+16,Wizard.chr,265,61,64,76,76,0x33da3,stopped at non-frame data,016_Wizard
+17,RedElf.chr,146,255,223,264,300,0x33080,stopped at non-frame data,017_RedElf
+18,WhiteElf.ch,196,107,103,115,125,0x47f93,stopped at non-frame data,018_WhiteElf
+19,Ranger.chr,121,57,79,70,94,0x1a9af,stopped at non-frame data,019_Ranger
+20,BlueElf.chr,186,112,106,128,136,0x7bc06,stopped at non-frame data,020_BlueElf
+21,Unicorn.chr,185,94,113,113,127,0x53723,stopped at non-frame data,021_Unicorn
+22,Pixie.chr,86,62,145,70,156,0x19aa0,stopped at non-frame data,022_Pixie
+23,ManaSpread,144,111,76,119,92,0x75764,stopped at non-frame data,023_ManaSpread
+24,ElfRing.chr,112,109,198,118,206,0x6a289,stopped at non-frame data,024_ElfRing
+25,Dragon.chr,166,179,224,194,248,0x1057fe,stopped at non-frame data,025_Dragon
+26,phoenix.chr,171,101,123,109,194,0x62fd0,stopped at non-frame data,026_phoenix
+27,AngelElf.ch,168,148,216,156,225,0x107fdd,stopped at non-frame data,027_AngelElf
+28,GreenElf.ch,257,133,152,146,170,0x10131c,stopped at non-frame data,028_GreenElf
+29,DarkElf.chr,176,128,199,150,209,0x6abe6,stopped at non-frame data,029_DarkElf
+30,Null.chr,207,137,180,184,227,0x138419,stopped at non-frame data,030_Null
+32,Dinos.chr,550,63,52,77,61,0x72b08,stopped at non-frame data,032_Dinos
+33,Masos.chr,135,58,64,73,79,0x1c346,stopped at non-frame data,033_Masos
+34,Velocis.chr,150,118,105,126,113,0x2f176,stopped at non-frame data,034_Velocis
+35,TwinVelocis,212,138,134,146,151,0x614fd,stopped at non-frame data,035_TwinVelocis
+36,Dilophos.ch,170,69,82,84,93,0x37fa5,stopped at non-frame data,036_Dilophos
+37,Rhamphos.ch,87,59,65,72,75,0x1c049,stopped at non-frame data,037_Rhamphos
+38,TwinRhampho,46,102,166,118,187,0x1fd9b,stopped at non-frame data,038_TwinRhampho
+39,Pteras.chr,126,145,200,154,220,0x83dd1,stopped at non-frame data,039_Pteras
+40,Trices.chr,190,195,180,203,192,0x8b189,stopped at non-frame data,040_Trices
+41,Dsunguri.ch,86,170,229,178,256,0x8204c,stopped at non-frame data,041_Dsunguri
+42,EggThrower,191,158,143,206,185,0x103d2e,stopped at non-frame data,042_EggThrower
+43,Mutant.chr,166,123,210,148,223,0x15130f,stopped at non-frame data,043_Mutant
+44,Tyranos.chr,226,321,270,344,279,0x352b46,stopped at non-frame data,044_Tyranos
+45,TwinPteras,146,222,248,234,270,0xf1dc5,stopped at non-frame data,045_TwinPteras
+46,Kentros.chr,190,157,148,168,186,0xdcc7a,stopped at non-frame data,046_Kentros
+47,Null__3.chr,190,157,148,168,186,0xdcc7a,stopped at non-frame data,047_Null__3
+48,Insect.chr,343,57,43,66,57,0x544c4,stopped at non-frame data,048_Insect
+49,Skeleton.ch,204,74,75,82,87,0x423ec,stopped at non-frame data,049_Skeleton
+50,MudMan.chr,160,100,89,148,127,0x685f7,stopped at non-frame data,050_MudMan
+51,DeathEye.ch,46,61,134,69,142,0x1390d,stopped at non-frame data,051_DeathEye
+52,Phantom.chr,86,146,182,154,190,0x48a5d,stopped at non-frame data,052_Phantom
+53,Gargoyle.ch,146,152,233,186,257,0xf5b28,stopped at non-frame data,053_Gargoyle
+54,Kelpa.chr,170,188,184,200,192,0xa53c9,stopped at non-frame data,054_Kelpa
+55,Warlock.chr,140,56,87,89,100,0x33ede,stopped at non-frame data,055_Warlock
+56,KingDemon.c,207,137,180,184,227,0x138419,stopped at non-frame data,056_KingDemon
+57,DarkBat.chr,166,118,149,126,169,0x7d797,stopped at non-frame data,057_DarkBat
+58,Devil.chr,385,154,180,206,229,0x1ba36b,stopped at non-frame data,058_Devil
+59,RiseZombie1,128,34,49,52,67,0x14b1f,stopped at non-frame data,059_RiseZombie1
+60,RiseZombie2,128,34,51,56,69,0x15da6,stopped at non-frame data,060_RiseZombie2
+61,Imp.chr,120,66,83,105,112,0x2af7d,stopped at non-frame data,061_Imp
+62,FemmeFatale,237,285,230,308,265,0xd8d53,stopped at non-frame data,062_FemmeFatale
+63,Nightmare.c,209,131,137,144,156,0xce4bc,stopped at non-frame data,063_Nightmare
+64,Tyranosauru,300,295,246,315,256,0x2ebc01,stopped at non-frame data,064_Tyranosauru
+65,Triceratops,290,206,180,241,197,0x24da77,stopped at non-frame data,065_Triceratops
+66,Ceratosauru,270,179,159,203,170,0x113997,stopped at non-frame data,066_Ceratosauru
+67,Pachycephal,250,122,111,153,135,0x82ac1,stopped at non-frame data,067_Pachycephal
+68,Dilophosaur,250,119,101,142,109,0x6e9d6,stopped at non-frame data,068_Dilophosaur
+69,Velocirapto,210,105,95,135,104,0x58738,stopped at non-frame data,069_Velocirapto
+70,Brachiosaur,210,334,355,478,365,0x2b1c44,stopped at non-frame data,070_Brachiosaur
+71,Stegosaurus,230,167,129,187,161,0x177bcb,stopped at non-frame data,071_Stegosaurus
+72,Parasaurolo,210,130,127,162,140,0xa5f39,stopped at non-frame data,072_Parasaurolo
+73,Saltasaurus,210,137,123,157,131,0x87e1a,stopped at non-frame data,073_Saltasaurus
+74,Protocerato,130,91,69,99,77,0x3fa6d,stopped at non-frame data,074_Protocerato
+75,Galimimus.c,150,107,82,128,91,0x2b7d0,stopped at non-frame data,075_Galimimus
+76,Psittacosau,130,75,71,90,85,0x23ed7,stopped at non-frame data,076_Psittacosau
+77,Pteranodon,66,145,200,154,220,0x37c41,stopped at non-frame data,077_Pteranodon
+78,Rhamphorhyn,46,102,174,114,195,0x1a2c3,stopped at non-frame data,078_Rhamphorhyn
+79,Plesiosaurs,185,138,93,149,102,0x29e08,stopped at non-frame data,079_Plesiosaurs
+80,Peleneustes,85,77,39,86,51,0xc189,stopped at non-frame data,080_Peleneustes
+81,PicaTyrano,300,394,331,421,341,0x63fc27,stopped at non-frame data,081_PicaTyrano
+83,Alien1.chr,90,69,70,78,99,0x2b209,stopped near end of file,083_Alien1
+84,Alien2.chr,90,105,103,120,146,0x593af,stopped near end of file,084_Alien2
+85,Alien3.chr,55,175,202,189,217,0x6fdf7,stopped near end of file,085_Alien3
+87,87.chr,205,57,76,77,94,0x391c1,stopped at non-frame data,087_87
+90,BoneFighter,229,81,100,136,123,0x5666f,stopped at non-frame data,090_BoneFighter
+91,Silvan_Fade,213,128,103,140,130,0x48368,stopped at non-frame data,091_Silvan_Fade
+92,SkyBallista,216,164,136,172,144,0xe5737,stopped at non-frame data,092_SkyBallista
+93,SkyBullet_S,214,164,126,172,140,0xe22c0,stopped at non-frame data,093_SkyBullet_S
+94,Giant_FireW,232,219,203,245,211,0xa7046,stopped at non-frame data,094_Giant_FireW
+95,DoubleBow_B,139,189,113,197,126,0x9b591,stopped at non-frame data,095_DoubleBow_B
+96,Sanctuary.c,6,197,133,205,145,0x11216,stopped near end of file,096_Sanctuary
+98,House.chr,4,70,59,78,67,0x547a,stopped near end of file,098_House
+99,StoneTower,5,76,87,84,95,0x6b2a,stopped near end of file,099_StoneTower
+100,PowerHouse,6,164,140,172,148,0xde7b,stopped near end of file,100_PowerHouse
+101,SoldierHous,6,184,109,192,117,0x11137,stopped near end of file,101_SoldierHous
+102,SkyHouse.ch,24,173,145,181,153,0x54407,stopped near end of file,102_SkyHouse
+103,Blacksmith,25,174,139,182,183,0x18fcf,stopped near end of file,103_Blacksmith
+104,LandIncreas,6,170,101,181,111,0xd752,stopped near end of file,104_LandIncreas
+105,SkyIncrease,6,175,103,183,111,0xc962,stopped near end of file,105_SkyIncrease
+106,Trap.chr,4,66,32,74,40,0x401e,stopped near end of file,106_Trap
+107,PowerIncrea,6,187,121,195,129,0x10404,stopped near end of file,107_PowerIncrea
+108,IronIncreas,35,189,137,197,192,0x1d3fe,stopped near end of file,108_IronIncreas
+111,SummonHouse,11,132,118,140,126,0x11d52,stopped near end of file,111_SummonHouse
+112,Heaven.chr,9,204,146,212,154,0x7ef0,stopped near end of file,112_Heaven
+113,Null__7.chr,9,95,75,103,83,0xbbb7,stopped near end of file,113_Null__7
+114,ElfTree.chr,1,98,90,106,98,0x40cc,stopped near end of file,114_ElfTree
+115,Bubble.chr,9,95,75,103,83,0xbbb7,stopped near end of file,115_Bubble
+116,RedHall.chr,17,170,101,178,109,0x10165,stopped near end of file,116_RedHall
+117,BlueHall.ch,6,166,122,174,130,0x8ee1,stopped near end of file,117_BlueHall
+118,ManaHall.ch,13,173,112,181,120,0xa67e,stopped near end of file,118_ManaHall
+119,SkyHall.chr,9,205,131,213,139,0x7ffa,stopped near end of file,119_SkyHall
+120,ElfLibrary,7,150,121,158,129,0xca45,stopped near end of file,120_ElfLibrary
+121,SkyLibrary,7,139,128,147,136,0x116db,stopped near end of file,121_SkyLibrary
+122,ManaLibrary,7,129,135,137,143,0xe604,stopped near end of file,122_ManaLibrary
+123,GreenHall.c,7,166,123,174,131,0xc911,stopped near end of file,123_GreenHall
+124,HolyTemple,7,131,131,139,139,0x118f3,stopped near end of file,124_HolyTemple
+125,GreenTree.c,19,145,88,155,96,0x1e589,stopped near end of file,125_GreenTree
+127,SummonHall,10,147,98,155,106,0x1370e,stopped near end of file,127_SummonHall
+128,TyranoNest,10,195,181,203,189,0x14588,stopped near end of file,128_TyranoNest
+130,Nest.chr,4,147,106,155,114,0x91f7,stopped near end of file,130_Nest
+131,Ascomoid.ch,13,112,93,120,101,0xfeb5,stopped near end of file,131_Ascomoid
+132,EggNest.chr,15,131,93,139,101,0x21fa7,stopped near end of file,132_EggNest
+133,LandNest.ch,8,208,177,216,185,0xf31a,stopped near end of file,133_LandNest
+134,SkyNest.chr,9,215,153,223,161,0x12a31,stopped near end of file,134_SkyNest
+135,ThrowNest.c,7,176,152,184,160,0xde52,stopped near end of file,135_ThrowNest
+136,UpgradeNest,14,173,117,181,125,0x2fed3,stopped near end of file,136_UpgradeNest
+137,LandNisdos,4,230,168,238,176,0x1180a,stopped near end of file,137_LandNisdos
+138,SkyNisdos.c,4,219,218,227,226,0x13997,stopped near end of file,138_SkyNisdos
+143,Summon_Nest,16,162,155,170,163,0x15dc4,stopped near end of file,143_Summon_Nest
+144,DemonDen.ch,10,239,154,247,162,0x1bd47,stopped near end of file,144_DemonDen
+146,Tomb.chr,4,105,75,113,83,0x6fb3,stopped near end of file,146_Tomb
+147,Volcano.chr,10,79,60,87,83,0x7200,stopped near end of file,147_Volcano
+148,DeathDen.ch,27,153,74,161,113,0x17580,stopped near end of file,148_DeathDen
+149,FlyDen.chr,24,172,170,180,178,0x28d1d,stopped near end of file,149_FlyDen
+150,MagicDen.ch,17,156,77,164,85,0x14173,stopped near end of file,150_MagicDen
+151,Hell.chr,14,156,86,164,94,0x1f699,stopped near end of file,151_Hell
+152,DirtyPortal,24,184,117,192,139,0x42393,stopped near end of file,152_DirtyPortal
+153,HighPortal,22,139,101,147,109,0x3bfa8,stopped near end of file,153_HighPortal
+154,FlyPortal.c,10,176,133,184,141,0x1900b,stopped near end of file,154_FlyPortal
+155,EvilPortal,10,177,119,185,127,0x14c52,stopped near end of file,155_EvilPortal
+158,Null__17.chr,9,161,117,169,125,0xd5c1,stopped near end of file,158_Null__17
+159,SummonDen.c,9,161,117,169,125,0xd5c1,stopped near end of file,159_SummonDen
+160,NoxiousWeed,1,104,83,112,91,0x3622,stopped near end of file,160_NoxiousWeed
+161,Poisonous.c,10,148,105,158,114,0x113b9,stopped near end of file,161_Poisonous
+162,Treant.chr,10,123,105,132,113,0xec9a,stopped near end of file,162_Treant
+163,DemonFlower,20,145,88,155,96,0x1fe14,stopped near end of file,163_DemonFlower
+164,Alien4.chr,5,125,148,133,158,0x98aa,stopped near end of file,164_Alien4
+165,165.chr,13,141,129,149,137,0x170b0,stopped near end of file,165_165
