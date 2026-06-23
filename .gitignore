@@ -1,0 +1,50 @@
+# Ignore everything by default.
+*
+
+# Local archive for files not needed to run ranker/jw2_overlay.py.
+_ranker_unit_counter_unused/
+
+# Keep the ignore rules themselves versionable.
+!.gitignore
+
+# Keep only the overlay script and its runtime overlay data visible to Git.
+!ranker/
+ranker/*
+!ranker/jw2_overlay.py
+!ranker/jw2_launcher.py
+!ranker/overlay_data/
+ranker/overlay_data/*
+!ranker/overlay_data/decoded_chr/
+ranker/overlay_data/decoded_chr/*
+!ranker/overlay_data/decoded_chr/units.csv
+!ranker/overlay_data/item_badge_candidates/
+ranker/overlay_data/item_badge_candidates/*
+!ranker/overlay_data/item_badge_candidates/11.png
+!ranker/overlay_data/item_badge_candidates/22.png
+!ranker/overlay_data/mapeditor_raw/
+ranker/overlay_data/mapeditor_raw/*
+!ranker/overlay_data/mapeditor_raw/char_small
+!ranker/overlay_data/mapeditor_raw/char_small__2
+!ranker/overlay_data/mapeditor_raw/item.pnt
+!ranker/overlay_data/mapeditor_raw/item.trt
+!ranker/overlay_data/mapeditor_raw/upgrade.pnt
+!ranker/overlay_data/mapeditor_raw/upgrade.trt
+!ranker/overlay_data/unit_icons/
+ranker/overlay_data/unit_icons/*
+!ranker/overlay_data/unit_icons/mapeditor_badged_v4_38px/
+ranker/overlay_data/unit_icons/mapeditor_badged_v4_38px/*
+!ranker/overlay_data/unit_icons/mapeditor_badged_v4_38px/*.png
+!ranker/overlay_data/upgrade_icon_candidates/
+ranker/overlay_data/upgrade_icon_candidates/*
+!ranker/overlay_data/upgrade_icon_candidates/*.png
+
+# Keep the replay result server visible to Git.
+!jw2_result_server/
+jw2_result_server/*
+!jw2_result_server/server.py
+!jw2_result_server/jwar2_replay_result.py
+!jw2_result_server/README.md
+!jw2_result_server/data/
+jw2_result_server/data/*
+!jw2_result_server/data/replay_hashes.json
+!jw2_result_server/data/player_stats.json

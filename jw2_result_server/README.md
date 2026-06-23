@@ -22,8 +22,10 @@ different server, or `--no-result-upload` to disable the upload.
 
 ## Endpoints
 
-- `GET /all` or `GET /:all`: shows an HTML table for all known players.
-- `GET /all?format=json`: returns all known players as JSON.
+- `GET /`, `GET /all`, or `GET /:all`: shows an HTML table for all known
+  players, sorted by win rate and game count.
+- `GET /?format=json` or `GET /all?format=json`: returns all known players as
+  JSON.
 - `GET /{nickname}` or `GET /:{nickname}`: returns one player's wins, losses,
   games, and win rate.
 - `POST /replay`: uploads a replay. The server accepts raw `.ply` bytes,

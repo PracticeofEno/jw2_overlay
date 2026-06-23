@@ -111,6 +111,29 @@ def build_stat(nickname: str, wins: int = 0, losses: int = 0) -> dict[str, Any]:
     }
 
 
+def ranking_score(player: dict[str, Any]) -> float:
+    wins = int(player.get("wins", 0))
+    games = int(player.get("games", 0))
+    if games <= 0:
+        return 0.0
+
+    z = 1.96
+    ratio = wins / games
+    z2 = z * z
+    denominator = 1 + z2 / games
+    center = ratio + z2 / (2 * games)
+    margin = z * ((ratio * (1 - ratio) + z2 / (4 * games)) / games) ** 0.5
+    return (center - margin) / denominator
+
+
+def player_rank_key(player: dict[str, Any]) -> tuple[float, int, int, int, str]:
+    games = int(player.get("games", 0))
+    wins = int(player.get("wins", 0))
+    losses = int(player.get("losses", 0))
+    nickname = str(player.get("nickname", "")).casefold()
+    return (-ranking_score(player), -games, -wins, losses, nickname)
+
+
 class ResultStore:
     def __init__(self, data_dir: Path):
         self.data_dir = data_dir
@@ -191,7 +214,7 @@ class ResultStore:
                 self._normalize_stat(nickname, raw)
                 for nickname, raw in stats.items()
             ]
-        return sorted(players, key=lambda item: item["nickname"].casefold())
+        return sorted(players, key=player_rank_key)
 
     def _normalize_stat(self, nickname: str, raw: Any) -> dict[str, Any]:
         if not isinstance(raw, dict):
@@ -373,19 +396,21 @@ def players_table_html(players: list[dict[str, Any]]) -> str:
         nickname = html.escape(str(player.get("nickname", "")))
         wins = html.escape(str(player.get("wins", 0)))
         losses = html.escape(str(player.get("losses", 0)))
+        games = html.escape(str(player.get("games", 0)))
         win_rate = html.escape(format_win_rate(player.get("win_rate", 0.0)))
         rows.append(
             "<tr>"
             f"<td>{nickname}</td>"
             f"<td class=\"num\">{wins}</td>"
             f"<td class=\"num\">{losses}</td>"
+            f"<td class=\"num\">{games}</td>"
             f"<td class=\"num\">{win_rate}</td>"
             "</tr>"
         )
 
     if not rows:
         rows.append(
-            "<tr><td class=\"empty\" colspan=\"4\">저장된 플레이어가 없습니다.</td></tr>"
+            "<tr><td class=\"empty\" colspan=\"5\">저장된 플레이어가 없습니다.</td></tr>"
         )
 
     return """<!doctype html>
@@ -448,6 +473,7 @@ def players_table_html(players: list[dict[str, Any]]) -> str:
           <th>닉네임</th>
           <th class="num">승</th>
           <th class="num">패</th>
+          <th class="num">대전</th>
           <th class="num">승률</th>
         </tr>
       </thead>
@@ -507,19 +533,7 @@ class ReplayResultHandler(BaseHTTPRequestHandler):
         parts = [part for part in parsed.path.split("/") if part]
 
         if not parts:
-            self._send_json(
-                HTTPStatus.OK,
-                {
-                    "service": "jw2_result_server",
-                    "endpoints": [
-                        "GET /all",
-                        "GET /:all",
-                        "GET /{nickname}",
-                        "GET /:{nickname}",
-                        "POST /replay",
-                    ],
-                },
-            )
+            self._send_all_players(parsed)
             return
 
         if len(parts) != 1:
@@ -527,14 +541,7 @@ class ReplayResultHandler(BaseHTTPRequestHandler):
 
         segment = unquote(parts[0])
         if segment in ("all", ":all"):
-            players = self.server.store.get_all_players()
-            if self._wants_json(parsed):
-                self._send_json(
-                    HTTPStatus.OK,
-                    {"players": players, "count": len(players)},
-                )
-            else:
-                self._send_html(HTTPStatus.OK, players_table_html(players))
+            self._send_all_players(parsed)
             return
 
         nickname = segment[1:] if segment.startswith(":") else segment
@@ -549,6 +556,16 @@ class ReplayResultHandler(BaseHTTPRequestHandler):
         else:
             found = True
         self._send_json(HTTPStatus.OK, {"player": player, "found": found})
+
+    def _send_all_players(self, parsed: Any) -> None:
+        players = self.server.store.get_all_players()
+        if self._wants_json(parsed):
+            self._send_json(
+                HTTPStatus.OK,
+                {"players": players, "count": len(players)},
+            )
+        else:
+            self._send_html(HTTPStatus.OK, players_table_html(players))
 
     def _wants_json(self, parsed: Any) -> bool:
         query = parse_qs(parsed.query)
